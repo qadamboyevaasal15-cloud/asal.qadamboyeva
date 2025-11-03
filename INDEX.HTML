@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Kutubxona</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    /* Hero banner */
+    .hero {
+      background: url('https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=1400&q=80') 
+        center/cover no-repeat;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      padding: 20px;
+    }
+
+    .hero h1 {
+      font-size: 56px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+    }
+
+    .hero p {
+      font-size: 22px;
+      margin-bottom: 35px;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.4);
+    }
+
+    .buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .buttons a {
+      padding: 12px 28px;
+      border-radius: 30px;
+      background-color: #2563eb;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .buttons a:hover {
+      background-color: #1e40af;
+    }
+
+    /* News section */
+    .news {
+      padding: 60px 20px;
+      background-color: white;
+      text-align: center;
+    }
+
+    .news h2 {
+      font-size: 32px;
+      color: #1e3a8a;
+      margin-bottom: 40px;
+    }
+
+    .news-cards {
+      display: flex;
+      gap: 25px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background-color: #e0e7ff;
+      padding: 25px;
+      border-radius: 12px;
+      width: 280px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .card h3 {
+      color: #1e3a8a;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 36px;
+      }
+
+      .hero p {
+        font-size: 18px;
+      }
+
+      .buttons {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <h1>📖 Smart Kutubxona</h1>
+    <p>“Zamonaviy ta’lim uchun raqamli imkoniyatlar”</p>
+    <div class="buttons">
+      <a href="kitoblar.html">Kitoblar</a>
+      <a href="joyband.html">Joy band qilish</a>
+      <a href="aloqa.html">Aloqa</a>
+    </div>
+  </section>
+
+  <section class="news">
+    <h2>📢 So‘nggi yangiliklar</h2>
+    <div class="news-cards">
+      <div class="card">
+        <h3>📚 Yangi kitoblar keldi!</h3>
+        <p>500 dan ortiq elektron kitoblar kutubxonamizga qo‘shildi.</p>
+      </div>
+      <div class="card">
+        <h3>📅 Yangi band qilish tizimi</h3>
+        <p>Endi joy band qilish yanada tez va qulay bo‘ldi.</p>
+      </div>
+      <div class="card">
+        <h3>⏰ Ish vaqti o‘zgardi</h3>
+        <p>Kutubxona endi har kuni 20:00 gacha ochiq!</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

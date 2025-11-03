@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joy Band Qilish | Smart Kutubxona</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+    }
+
+    header {
+      background-color: #2563eb;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #1e40af;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      color: #333;
+      font-weight: 500;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-size: 14px;
+    }
+
+    button {
+      background-color: #2563eb;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      font-size: 16px;
+      width: 100%;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #1e40af;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Smart Kutubxona</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Bosh sahifa</a>
+    <a href="kitoblar.html">Kitoblar</a>
+    <a href="joyband.html">Joy band qilish</a>
+    <a href="aloqa.html">Aloqa</a>
+  </nav>
+
+  <div class="container">
+    <h2>📅 Joy Band Qilish</h2>
+    <form>
+      <label for="fullname">To‘liq ismingiz</label>
+      <input type="text" id="fullname" name="fullname" required>
+
+      <label for="phone">Telefon raqamingiz</label>
+      <input type="tel" id="phone" name="phone" placeholder="+998" required>
+
+      <label for="room">Zal yoki xona tanlang</label>
+      <select id="room" name="room" required>
+        <option value="">Tanlang...</option>
+        <option value="zal1">1-Zal (O‘quvchilar uchun)</option>
+        <option value="zal2">2-Zal (Tadbirlar uchun)</option>
+        <option value="xona1">1-Xona (Individual)</option>
+      </select>
+
+      <label for="date">Sana</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Vaqt</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="comment">Izoh (ixtiyoriy)</label>
+      <textarea id="comment" name="comment" rows="3" placeholder="Izoh qoldiring..."></textarea>
+
+      <button type="submit">Band qilish</button>
+    </form>
+  </div>
+
+</body>
+</html>

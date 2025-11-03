@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aloqa | Smart Kutubxona</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f3f4f6;
+    }
+    header {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+    nav {
+      background-color: #374151;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 600px;
+      margin: 50px auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #1e3a8a;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #333;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    button {
+      background-color: #1e3a8a;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 25px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    button:hover {
+      background-color: #3b82f6;
+    }
+    footer {
+      background-color: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Smart Kutubxona</h1>
+    <p>Zamonaviy raqamli ta'lim kutubxonasi</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Bosh sahifa</a>
+    <a href="kitoblar.html">Kitoblar</a>
+    <a href="joyband.html">Joy band qilish</a>
+    <a href="aloqa.html">Aloqa</a>
+  </nav>
+
+  <div class="container">
+    <h2>📞 Biz bilan bog‘laning</h2>
+    <form>
+      <label for="name">Ismingiz</label>
+      <input type="text" id="name" name="name" placeholder="Ismingizni kiriting" required>
+
+      <label for="email">Email manzilingiz</label>
+      <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+
+      <label for="message">Xabaringiz</label>
+      <textarea id="message" name="message" rows="5" placeholder="Xabaringizni yozing..." required></textarea>
+
+      <button type="submit">Yuborish</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Smart Kutubxona. Barcha huquqlar himoyalangan.
+  </footer>
+</body>
+</html>
